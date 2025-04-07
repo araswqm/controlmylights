@@ -95,7 +95,7 @@
 </head>
 <body class="off">
   <div class="switch-container">
-    <div class="label off">Işık Kapat</div>
+    <div class="label off">Işık Kapalı</div>
     <div class="switch" id="lightSwitch"></div>
     <div class="status off" id="statusText">KAPALI</div>
   </div>
@@ -113,7 +113,7 @@
       statusText.className = isOn ? 'status on' : 'status off';
       body.className = isOn ? 'on' : 'off';
       label.className = isOn ? 'label on' : 'label off';
-      label.textContent = isOn ? 'Işık Aç' : 'Işık Kapat';
+      label.textContent = isOn ? 'Işık Açık' : 'Işık Kapalı';
       const requestUrl = `${lightControlURL}?state=${isOn ? 'on' : 'off'}`;
       fetch(requestUrl)
         .then(response => response.json())
