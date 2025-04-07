@@ -110,7 +110,7 @@
 
     switchElement.addEventListener('click', () => {
       const isOn = switchElement.classList.toggle('on');
-      statusText.textContent = isOn ? 'AÇIK' : 'KAPALI';
+      statusText.textContent = isOn ? 'ON' : 'OFF';
       statusText.className = isOn ? 'status on' : 'status off';
       body.className = isOn ? 'on' : 'off';
       label.className = isOn ? 'label on' : 'label off';
